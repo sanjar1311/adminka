@@ -1,0 +1,81 @@
+.tickets-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.tickets-header-title {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+
+  & button {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 5s ease;
+  }
+}
+
+.find-icon {
+  margin-right: 5px !important;
+  &:hover {
+    & svg circle, path{
+      stroke: #000;
+    }
+  }
+  &:active {
+    & svg circle, path{
+      stroke: #C5C7CD;
+    }
+  }
+}
+
+.notification-icon {
+  margin-right: 22px !important;
+  &:hover {
+    & svg path{
+      fill: #000;
+    }
+  }
+  &:active {
+    & svg path{
+      fill: #C5C7CD;
+    }
+  }
+}
+
+.username {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #252733;
+  margin: 0;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 32px;
+    background-color: #C5C7CD;
+    margin-right: 32px;
+  }
+}
+
+.userpic {
+  border-radius: 50%;
+}

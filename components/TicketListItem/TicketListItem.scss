@@ -1,0 +1,114 @@
+.ticket-list-item {
+  display: flex;
+  align-items: center;
+  padding: 24px 30px;
+  border-bottom: 1px solid #DFE0EB;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: rgba(55, 81, 255, .04);
+  }
+}
+
+.item-left {
+  display: flex;
+  min-width: 40%;
+}
+
+.item-right {
+  display: flex;
+  min-width: 60%;
+  justify-content: space-between;
+}
+
+.customer-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+  margin: 0;
+}
+
+.customer-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #C5C7CD;
+}
+
+.ticket-owner-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 24px;
+}
+
+.costumer-settings-icon {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  cursor: pointer;
+
+  & svg {
+    color: #C5C7CD;
+  }
+
+  &:hover {
+
+    & svg {
+      color: #252733;
+    }
+  }
+
+  &:active {
+
+    svg {
+      color: #C5C7CD;
+    }
+  }
+}
+
+.date {
+  width: 350px;
+  max-width: 350px;
+}
+
+.status {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 4px 15px;
+  background-color: grey;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  margin-right: auto;
+
+  &.high {
+    background-color: #F12B2C;
+  }
+  &.low {
+    background-color: #FEC400;
+  }
+  &.normal {
+    background-color: #29CC97;
+  }
+}

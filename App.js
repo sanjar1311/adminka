@@ -1,6 +1,6 @@
 import {Switch, Route} from "react-router-dom"
 
-import Ticets from "./pages/Ticets/Ticets"
+import Tickets from "./pages/Tickets/Tickets"
 import Sidebar from "./containers/Sidebar/Sidebar"
 
 import './assets/styles/main.scss';
@@ -11,7 +11,7 @@ function App() {
       <Sidebar />
 
       <Switch>
-        <Route path="/" component={Ticets} exact />
+        <Route path="/" component={Tickets} exact />
       </Switch>
     </div>
   );
