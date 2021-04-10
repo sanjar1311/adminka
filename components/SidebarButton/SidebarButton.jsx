@@ -1,12 +1,12 @@
 import "./SidebarButton.scss"
 
-function SidebarButton({title, icon}) {
+function SidebarButton({title, icon, active}) {
   return(
     <>
-      <button className="sidebar-btn">
+      <div className={`sidebar-btn ${active ? 'active' : ''}`}>
         <span className="sidebar-btn-icon">{icon}</span>
         <span>{title}</span>
-      </button>
+      </div>
     </>
   )
 }

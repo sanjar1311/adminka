@@ -1,6 +1,4 @@
 .sidebar-btn {
-  border: none;
-  background-color: transparent;
   padding: 18px 24px 18px 32px;
   font-weight: normal;
   line-height: 20px;
@@ -15,6 +13,16 @@
   transition: all .5s ease;
 
   &:hover {
+    background-color: rgba(159, 162, 180, .08);
+    color: #DDE2FF;
+    border-left: 3px solid #DDE2FF;
+
+    & .sidebar-btn-icon {
+      fill: #DDE2FF;
+    }
+  }
+
+  &.active {
     background-color: rgba(159, 162, 180, .08);
     color: #DDE2FF;
     border-left: 3px solid #DDE2FF;
