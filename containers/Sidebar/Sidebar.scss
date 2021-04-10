@@ -3,6 +3,10 @@
   width: auto;
   background-color: #363740;
   padding: 41px 0;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 .logo {

@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import SidebarButton from "../../components/SidebarButton/SidebarButton"
 import {
   Logo,
@@ -20,17 +22,33 @@ function Sidebar() {
         <span className="logo-icon"><Logo /></span>
         <span className="logo-title">Dashboard Kit</span>
       </div>
-      <SidebarButton title="Overview" icon={<Overview />}/>
-      <SidebarButton title="Ticets" icon={<Ticets />}/>
-      <SidebarButton title="Ideas" icon={<Ideas />}/>
-      <SidebarButton title="Contacts" icon={<Contacts />}/>
-      <SidebarButton title="Agents" icon={<Agents />}/>
-      <SidebarButton title="Articles" icon={<Articles />}/>
+      <Link to="overview">
+        <SidebarButton title="Overview" icon={<Overview />}/>
+      </Link>
+      <Link to="/">
+        <SidebarButton title="Tickets" icon={<Ticets />}/>
+      </Link>
+      <Link to="ideas">
+        <SidebarButton title="Ideas" icon={<Ideas />}/>
+      </Link>
+      <Link to="contacts">
+        <SidebarButton title="Contacts" icon={<Contacts />}/>
+      </Link>
+      <Link to="agents">
+        <SidebarButton title="Agents" icon={<Agents />}/>
+      </Link>
+      <Link to="articles">
+        <SidebarButton title="Articles" icon={<Articles />}/>
+      </Link>
 
       <div className="line"></div>
 
-      <SidebarButton title="Settings" icon={<Settings />}/>
-      <SidebarButton title="Subscription" icon={<Subscription />}/>
+      <Link to="settings">
+        <SidebarButton title="Settings" icon={<Settings />}/>
+      </Link>
+      <Link to="subscription">
+        <SidebarButton title="Subscription" icon={<Subscription />}/>
+      </Link>
     </div>
   )
 }

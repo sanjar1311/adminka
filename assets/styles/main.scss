@@ -11,5 +11,11 @@ body {
 }
 
 .app {
+  min-height: 100vh;
   display: flex;
+}
+
+.right-side-wrapper {
+  width: 100%;
+  max-width: 100%;
 }
